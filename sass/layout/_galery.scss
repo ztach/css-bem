@@ -1,0 +1,26 @@
+.galeria {
+    background: radial-gradient(ellipse at center, #222, #222, #111);
+    background-repeat: repeat;
+    color: white;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    
+
+    &__title {
+        font-size: 2rem;
+        padding: 5px 0 20px;
+    }
+    
+    &__card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+        gap: 100px;
+    }
+}

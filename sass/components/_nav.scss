@@ -1,0 +1,92 @@
+// -------------------------------
+//     NAV VARIABLES
+// -------------------------------
+
+.nav {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-items: center;
+
+        &__item  {
+            display: block;
+            text-align: center;
+            padding: 18px 50px;
+
+            border-bottom: 5px solid $nav-color;
+
+            position: relative;
+
+            &:hover {
+                display: block;
+                background-color: $nav-color-bckground;
+                border-bottom: 5px solid $nav-color-border;
+
+                .subitem {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            &__link {
+                text-decoration: none;
+                color: white;
+                padding: 15px 50px;
+            }
+        }
+    }
+}
+
+/* pod menu*/
+
+.subitem {
+    visibility: hidden;
+    position: absolute;
+    top: 110%;
+    left: 20px;
+    right: -20px;
+    z-index: 1000;
+    background-color: $nav-color;
+    line-height: 3;
+    transition: opacity 0.5s;
+    opacity: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    display: block;
+
+
+    &__item {
+        
+        display: block;
+ 
+
+
+        &__link  {
+            display: block;
+            background-color: $nav-color;
+            text-align: center;
+            height: 70px;
+            line-height: 70px;
+            padding: 0px 70px;
+    
+
+            text-decoration: none;
+            color: white;
+        }
+
+        &__link:hover {
+            box-sizing: border-box;
+            background-color: $nav-color-bckground;
+            border-bottom: 5px solid $nav-color-border;
+        }
+    }
+
+}

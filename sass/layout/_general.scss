@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Lato;
+}
+
+header {
+    background-color: $nav-color;
+    height: 65px;
+}
+
+main {
+    display: block;
+    flex: 1;
+}
+
+footer {
+    background-color: rgba(165, 42, 42, 0.281);
+    height: 65px;
+}
